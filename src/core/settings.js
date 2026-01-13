@@ -19,7 +19,7 @@
  */
 const DEFAULT_SETTINGS = {
   darkMode: false,
-  trex: { first: 200, second: 150, third: 100, last: 40 },
+  trex: { first: 200, second: 150, third: 100, last: 50 },
   queens: { normal: -25, doubled: -50, plus: 25 },
   king: { normal: -75, doubled: -150, plus: 50 },
   diamonds: { value: -5 },
