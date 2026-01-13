@@ -1,0 +1,150 @@
+/* Round Detail Screen Styles */
+
+.round-detail-content {
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+.round-detail-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.round-detail-kingdom {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.round-detail-round-number {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  margin-top: 0.75rem;
+}
+
+.round-detail-no-data {
+  text-align: center;
+  margin-top: 2rem;
+  opacity: 0.6;
+}
+
+/* Contract Section */
+.contract-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: var(--color-card);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contract-title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 0.75rem;
+}
+
+.contract-details {
+  margin-bottom: 2rem;
+}
+
+/* Trex Order */
+.trex-order-title {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.trex-order-item {
+  padding: 0.75rem 1.5rem;
+  margin-left: 1rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-bg);
+  border-radius: 6px;
+}
+
+/* Queens & King Details */
+.detail-card {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+.detail-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.detail-doubled {
+  color: var(--color-danger);
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.detail-bonus {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* Counts (Diamonds/Tricks) */
+.count-table {
+  margin-top: 0.5rem;
+}
+
+.count-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-bg);
+  border-radius: 6px;
+}
+
+.count-player-name {
+  font-size: 1.05rem;
+}
+
+.count-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Scores Section */
+.scores-section-title {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-bg);
+  border-radius: 6px;
+}
+
+.score-player-name {
+  font-size: 1.1rem;
+}
+
+.score-value {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.score-value.positive {
+  color: var(--color-success);
+}
+
+.score-value.negative {
+  color: var(--color-danger);
+}

@@ -1,0 +1,37 @@
+/* Tabbar component styles */
+.tabbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 56px;
+  background: var(--color-card);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tab-btn {
+  flex: 1;
+  text-align: center;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+}
+
+.tab-btn:active {
+  transform: scale(0.95);
+}
+
+.tab-btn.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}

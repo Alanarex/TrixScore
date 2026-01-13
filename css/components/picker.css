@@ -1,0 +1,33 @@
+/* Picker input (modal-based list) */
+.picker-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 0.6rem 0.8rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.picker-input:hover {
+  border-color: var(--color-border-strong);
+}
+.picker-input:focus {
+  outline: none;
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 0 0 3px rgba(56,189,248,0.1);
+}
+.picker-list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.picker-row {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+}
+.picker-row:hover {
+  background: var(--color-hover);
+}

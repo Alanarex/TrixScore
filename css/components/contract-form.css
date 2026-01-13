@@ -1,0 +1,47 @@
+/* Contract Form Styling */
+.contract-form-label {
+  margin-bottom: 1rem;
+}
+
+.contract-form-row {
+  margin-bottom: 1.2rem;
+}
+
+.contract-form-option {
+  display: flex;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+.contract-form-option input {
+  margin-right: 0.5rem;
+}
+
+.contract-form-table tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.contract-form-table tr:nth-child(even) td,
+.contract-form-table tr:nth-child(even) th {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.contract-form-table tr:nth-child(odd) {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.contract-form-table tr:nth-child(odd) td,
+.contract-form-table tr:nth-child(odd) th {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.contract-form-stepper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}

@@ -1,0 +1,17 @@
+/* Detail Row Styling - Used by dom-helpers.js createDetailRow() */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-bg);
+  border-radius: 6px;
+}
+
+.detail-row .detail-label {
+  font-weight: 500;
+}
+
+.detail-row .detail-value {
+  font-weight: 700;
+}

@@ -1,0 +1,147 @@
+/* Choices.js Override Styling - Modern Look */
+
+/* Root container */
+.choices {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Inner input area */
+.choices[data-type*="select-one"] .choices__inner {
+  padding: 0;
+  background: var(--color-card);
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.choices[data-type*="select-one"] .choices__inner:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(56,189,248,0.1);
+}
+
+/* Display area for selected/placeholder */
+.choices__list--single {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0.8rem 1rem;
+}
+
+.choices__item--placeholder {
+  color: #9CA3AF;
+  font-size: 1rem;
+  padding: 0 !important;
+  font-weight: 500;
+}
+
+/* Dropdown menu */
+.choices__list--dropdown {
+  z-index: 1001;
+  position: absolute;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  background: var(--color-card);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  max-height: 280px;
+  overflow-y: auto;
+  top: calc(100% + 8px) !important;
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+}
+
+.choices__list--dropdown .choices__list {
+  padding: 0;
+}
+
+/* Individual dropdown items */
+.choices__item--choice {
+  padding: 0.7rem 1rem !important;
+  color: var(--color-text);
+  font-size: 1rem;
+  background: var(--color-card);
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 0;
+  font-weight: 500;
+}
+
+.choices__item--choice:hover {
+  background: #F3F4F6;
+  color: var(--color-primary);
+  padding-left: 1.1rem !important;
+}
+
+/* Selected item always shows blue, takes priority over highlighted */
+.choices__item--choice.is-selected,
+.choices__item--choice.is-selected.is-highlighted {
+  background: var(--color-primary) !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border-left: none;
+}
+
+/* Hide the disabled placeholder from dropdown */
+.choices__item--disabled {
+  display: none !important;
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] .choices[data-type*="select-one"] .choices__inner {
+  background: var(--color-card-dark);
+  border-color: #334155;
+}
+
+[data-theme="dark"] .choices[data-type*="select-one"] .choices__inner:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(56,189,248,0.15);
+}
+
+[data-theme="dark"] .choices__item--placeholder {
+  color: #6B7280;
+}
+
+[data-theme="dark"] .choices__list--dropdown {
+  background: var(--color-card-dark);
+  border-color: #334155;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .choices__item--choice {
+  background: var(--color-card-dark);
+  color: var(--color-text-dark);
+}
+
+[data-theme="dark"] .choices__item--choice:hover {
+  background: #1E293B;
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .choices__item--choice.is-selected,
+[data-theme="dark"] .choices__item--choice.is-selected.is-highlighted {
+  background: var(--color-primary) !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+/* Scrollbar styling */
+.choices__list--dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.choices__list--dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.choices__list--dropdown::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+
+[data-theme="dark"] .choices__list--dropdown::-webkit-scrollbar-thumb {
+  background: #475569;
+}

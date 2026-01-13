@@ -1,0 +1,143 @@
+/* Scoreboard Styles */
+
+.scoreboard-container {
+  padding-bottom: 1rem;
+}
+
+.scoreboard-title {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+/* Headers */
+.scoreboard-round-header {
+  padding: 0;
+  text-align: center;
+  background-color: var(--color-card);
+  font-weight: 600;
+  font-size: small;
+  width: 50px;
+}
+
+.scoreboard-team-header {
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.scoreboard-team1-header {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.scoreboard-team2-header {
+  background-color: var(--color-accent);
+  color: #000;
+}
+
+.scoreboard-player-header {
+  padding: 0.75rem;
+  text-align: center;
+  background-color: var(--color-card);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.scoreboard-action-header {
+  padding: 0;
+  width: 40px;
+  background-color: var(--color-card);
+}
+
+/* Player Names Row */
+.scoreboard-player-name-cell {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border, rgba(0, 0, 0, 0.1));
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.scoreboard-empty-cell {
+  padding: 0.5rem;
+}
+
+/* Round Cells */
+.scoreboard-round-cell {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: var(--color-card);
+}
+
+.scoreboard-score-cell {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.scoreboard-score-cell.max {
+  background-color: var(--color-card);
+  color: var(--color-success);
+}
+
+.scoreboard-score-cell.min {
+  background-color: var(--color-card);
+  color: var(--color-danger);
+}
+
+/* Action Button */
+.scoreboard-action-cell {
+  padding: 0;
+  text-align: center;
+}
+
+.scoreboard-action-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  color: var(--color-text);
+}
+
+/* Totals Row */
+.scoreboard-total-label {
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: small;
+  background-color: var(--color-card);
+}
+
+.scoreboard-total-cell {
+  padding: 0.6rem;
+  text-align: center;
+  font-weight: 700;
+  background-color: var(--color-card, #f6f6f6);
+}
+
+.scoreboard-total-cell.max {
+  background-color: var(--color-card);
+  color: var(--color-success);
+}
+
+.scoreboard-total-cell.min {
+  background-color: var(--color-card);
+  color: var(--color-danger);
+}
+
+.scoreboard-empty-action-cell {
+  padding: 0;
+}

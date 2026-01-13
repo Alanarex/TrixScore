@@ -1,0 +1,95 @@
+/* Score stepper component styles */
+.score-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem auto;
+  background: var(--color-card);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  width: fit-content;
+  min-width: 140px;
+  max-width: 180px;
+  height: var(--stepper-size);
+}
+
+.stepper-btn {
+  width: var(--stepper-size);
+  height: var(--stepper-size);
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.stepper-btn:hover {
+  background: rgba(45,140,255,0.08);
+}
+
+.stepper-btn:active {
+  background: var(--color-primary);
+  color: #fff;
+  transform: scale(0.95);
+}
+
+.stepper-value {
+  min-width: 48px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-text);
+  user-select: none;
+}
+
+.stepper-value.editable {
+  cursor: pointer;
+}
+
+.stepper-value.hidden {
+  display: none;
+}
+
+.stepper-value-input {
+  min-width: 48px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-text);
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Number input field */
+.number-input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.number-input-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  flex: 0 0 auto;
+}
+
+.number-input-stepper {
+  margin: 0;
+  min-width: 140px;
+  flex: 0 0 auto;
+}
+
+

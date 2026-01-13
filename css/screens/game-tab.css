@@ -1,0 +1,39 @@
+/* Game Tab Screen Styling */
+.game-tab-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
+
+.game-tab-progress {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.game-tab-progress-wrapper {
+  /* Container for the progress content */
+}
+
+.game-tab-progress-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.game-tab-progress-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  margin-top: 0.25rem;
+}
+
+.game-tab-form {
+  max-width: 340px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.game-tab-contract-form {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}

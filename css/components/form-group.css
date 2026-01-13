@@ -1,0 +1,49 @@
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-row {
+  margin-bottom: 1rem;
+}
+
+.form-group-label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+.form-check-label input[type="checkbox"],
+.form-check-label input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.form-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-select-wrapper select,
+select.choices-select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Picker row styling */
+.picker-row {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.picker-row.selected {
+  background-color: var(--color-primary);
+  color: white;
+}
