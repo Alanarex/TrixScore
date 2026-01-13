@@ -1,0 +1,30 @@
+/* Theme variables and dark mode */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-dark: #404140;
+  --color-primary: #D90429;
+  --color-primary-dark: #D90429;
+  --color-text: #242524;
+  --color-text-dark: #edf2f4;
+  --color-card: #edf2f4;
+  --color-card-dark: #242524;
+  --color-accent: #660708;
+  --color-accent-dark: #00c7b1;
+  --color-danger: #fd0000;
+  --color-success: #70e000;
+  --color-border: #242524;
+  --navbar-height: 48px;
+  --button-radius: 12px;
+  --button-size: 88vw;
+  --button-max: 320px;
+  --stepper-size: 48px;
+  --modal-bg: #24252442;
+}
+
+[data-theme="dark"] {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-card: var(--color-card-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-accent: var(--color-accent-dark);
+}

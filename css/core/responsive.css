@@ -1,0 +1,9 @@
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  .btn btn-primary {
+    --button-size: 240px;
+  }
+  .modal-content {
+    min-width: 320px;
+  }
+}
