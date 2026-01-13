@@ -1,0 +1,13 @@
+/* Button Pair Styling - Used by dom-helpers.js createButtonPair() */
+.button-pair {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.button-pair .btn {
+  width: 45%;
+  max-width: none;
+  margin: 0;
+}

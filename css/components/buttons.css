@@ -1,0 +1,92 @@
+/* Button component styles */
+
+/* Base button class - shared styles for all buttons */
+.btn {
+  width: var(--button-size);
+  max-width: var(--button-max);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--button-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  height: auto;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background: #D1D5DB;
+  color: #9CA3AF;
+  cursor: not-allowed;
+  opacity: 0.8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Primary button - main action color */
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-text-dark);
+  box-shadow: 0 4px 12px rgba(198,32,32,0.12);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 16px rgba(198,32,32,0.18);
+}
+
+.btn-primary:active {
+  background: var(--color-primary-dark);
+  box-shadow: 0 2px 8px rgba(198,32,32,0.12);
+}
+
+/* Accent button - secondary action color */
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  box-shadow: 0 4px 12px rgba(138,143,157,0.12);
+}
+
+.btn-accent:hover {
+  box-shadow: 0 6px 16px rgba(138,143,157,0.18);
+}
+
+.btn-accent:active {
+  opacity: 0.9;
+  box-shadow: 0 2px 8px rgba(138,143,157,0.12);
+}
+
+/* Danger button - destructive actions */
+.btn-danger {
+  background: var(--color-danger);
+  color: var(--color-text-dark);
+  box-shadow: 0 4px 12px rgba(253,0,0,0.12);
+}
+
+.btn-danger:hover {
+  box-shadow: 0 6px 16px rgba(253,0,0,0.18);
+}
+
+.btn-danger:active {
+  box-shadow: 0 2px 8px rgba(253,0,0,0.12);
+}
+
+/* Custom width modifier */
+.btn-custom-width {
+  width: var(--btn-width);
+  max-width: none;
+  margin: 0;
+}
