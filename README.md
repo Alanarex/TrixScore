@@ -69,7 +69,7 @@ No automated tests yet (see the open issues).
 - A complete app in framework-free JavaScript, organised in modules by responsibility.
 - Business-rule scoring logic (individual and team modes, doubling and bonuses).
 - PWA fundamentals: manifest, installability, service worker caching.
-- Mobile-first, accessible-minded UI with theming through CSS variables.
+- Mobile-first UI with theming through CSS variables.
 
 ## License
 
