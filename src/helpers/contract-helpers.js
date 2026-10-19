@@ -16,7 +16,7 @@ function showBonusSelectorModal(playerNames) {
   return new Promise((resolve) => {
     // Build clickable rows for each player
     const playerOptions = playerNames.map((p, i) =>
-      `<div class="picker-row" data-value="${i}" style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-border); cursor: pointer;">${p}</div>`
+      `<div class="picker-row" data-value="${i}" style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-border); cursor: pointer;">${escapeHtml(p)}</div>`
     ).join('');
 
     // Create modal with player options

@@ -27,7 +27,7 @@
     
     const roundDiv = createElement('div', {
       className: 'game-tab-progress-wrapper',
-      html: `<div class="game-tab-progress-title">Kingdom ${currentKingdom} — ${currentPlayerName}</div><div class="game-tab-progress-subtitle">Round ${currentRoundNum}/20</div>`
+      html: `<div class="game-tab-progress-title">Kingdom ${currentKingdom} — ${escapeHtml(currentPlayerName)}</div><div class="game-tab-progress-subtitle">Round ${currentRoundNum}/20</div>`
     });
     progress.appendChild(roundDiv);
     div.appendChild(progress);

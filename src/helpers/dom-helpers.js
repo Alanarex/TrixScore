@@ -1,4 +1,14 @@
 // DOM Helper Functions - Reduce boilerplate and repetition in app.js
+// Escape user-controlled text (e.g. player names) before putting it into HTML strings.
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 // PURPOSE: Provide reusable, type-safe element creators to reduce code duplication
 // and improve consistency across screens
 

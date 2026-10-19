@@ -222,7 +222,7 @@
      */
     function openPicker() {
       // Build HTML for all picker rows
-      const rows = normalized.map(o => `<div class="picker-row" data-value="${o.value}">${o.label}</div>`).join('');
+      const rows = normalized.map(o => `<div class="picker-row" data-value="${escapeHtml(o.value)}">${escapeHtml(o.label)}</div>`).join('');
       
       // Create modal with list of options
       const pickerModal = new Modal({
