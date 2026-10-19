@@ -27,7 +27,7 @@
     headerDiv.className = 'round-detail-header';
     const kingdomDiv = document.createElement('div');
     kingdomDiv.className = 'round-detail-kingdom';
-    kingdomDiv.innerHTML = `Kingdom ${kingdom} — ${playerName}`;
+    kingdomDiv.innerHTML = `Kingdom ${kingdom} — ${escapeHtml(playerName)}`;
     headerDiv.appendChild(kingdomDiv);
     const roundDiv = document.createElement('div');
     roundDiv.className = 'round-detail-round-number';
@@ -71,11 +71,11 @@
           if (q && q.eater !== undefined && q.eater >= 0) {
             const qDiv = document.createElement('div');
             qDiv.className = 'detail-card';
-            let text = `<span class="detail-card-title">Queen ${qIdx + 1}:</span> ${state.game.players[q.eater]}`;
+            let text = `<span class="detail-card-title">Queen ${qIdx + 1}:</span> ${escapeHtml(state.game.players[q.eater])}`;
             if (q.doubled) {
               text += ' <span class="detail-doubled">(Doubled)</span>';
               if (q.doubledPlayers && q.doubledPlayers.length > 0) {
-                text += `<br><span class="detail-bonus">Bonus to: ${q.doubledPlayers.map(p => state.game.players[p]).join(', ')}</span>`;
+                text += `<br><span class="detail-bonus">Bonus to: ${q.doubledPlayers.map(p => escapeHtml(state.game.players[p])).join(', ')}</span>`;
               }
             }
             qDiv.innerHTML = text;
@@ -85,11 +85,11 @@
       } else if (entry.contract === 'King' && entry.details) {
         const kDiv = document.createElement('div');
         kDiv.className = 'detail-card';
-        let text = `<span class="detail-card-title">King eaten by:</span> ${state.game.players[entry.details.eater]}`;
+        let text = `<span class="detail-card-title">King eaten by:</span> ${escapeHtml(state.game.players[entry.details.eater])}`;
         if (entry.details.doubled) {
           text += ' <span class="detail-doubled">(Doubled)</span>';
           if (entry.details.doubledPlayers && entry.details.doubledPlayers.length > 0) {
-            text += `<br><span class="detail-bonus">Bonus to: ${entry.details.doubledPlayers.map(p => state.game.players[p]).join(', ')}</span>`;
+            text += `<br><span class="detail-bonus">Bonus to: ${entry.details.doubledPlayers.map(p => escapeHtml(state.game.players[p])).join(', ')}</span>`;
           }
         }
         kDiv.innerHTML = text;
